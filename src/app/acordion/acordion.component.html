@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row align-content-center">
+    <div class="col">
+      <p>
+        <button type="button" class="btn btn-secondary" (click)="collapse.toggle()" [attr.aria-expanded]="!isCollapsed"
+                aria-controls="collapseExample">
+          {{InterpolationTitle}}
+        </button>
+      </p>
+      <div #collapse="ngbCollapse" [(ngbCollapse)]="isCollapsed">
+        <div class="card">
+          <div class="card-body text-black-50">
+            4DEVPS es un estudio de diseño gráfico, especializados dentro de las áreas de la comunicación con amplia experiencia en el mercado en: creación de marcas, manuales corporativos, señalética, publicidad, diseño multimedia, diseño web y contenido digital. Ofrecemos a nuestros clientes la mejor experiencia para ayudarlos a producir, crecer y triunfar.
+            Ofrecemos soluciones integrales de diseño gráfico para empresas públicas y privadas, creando todo lo que una empresa necesita para darse a conocer de forma muy sencilla, pensando en su economía y comodidad.
+            <br><br>
+            Asesoramos en todos nuestros servicios para conseguir los mejores resultados. Creemos en la importancia del diseño gráfico y como influye de forma muy positiva su aplicación en el entorno empresarial , por ello habilitamos nuestro servicio de asesoría de forma totalmente gratuita.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
